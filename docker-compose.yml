@@ -1,0 +1,13 @@
+version: '2.2'
+
+services:
+  python-dev-full:
+    build: .
+    volumes:
+      - ./src:/code
+    command: tail -f /dev/null
+
+# networks:
+#   default:
+#       name: dev
+    
